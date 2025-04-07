@@ -89,13 +89,17 @@ footer {
 }
 
 .profile-img {
-    max-width: 30vw;
-    @media (max-width: 425px) {
-        max-width: 200vw;
-    }
-    @media (min-width: 650px) and (max-width: 1250px) {
-        max-width: 80vw;
-    }
+    /* Setting default img width to 800px without media queries &
+    not dependent on view port width. */
+    min-width: 500px;
+    max-width: 600px;
+    padding-right: 2rem;
+    /*@media (max-width: 425px) {*/
+    /*    max-width: 200vw;*/
+    /*}*/
+    /*@media (min-width: 650px) and (max-width: 1250px) {*/
+    /*    max-width: 80vw;*/
+    /*}*/
 }
 
 .gallery {
@@ -110,16 +114,19 @@ footer {
 }
 
 .gallery-img {
-    min-width: 40%;
-    max-width: 0;
+    /* Setting default img size without media queries &
+    not dependent on view port width. */
+    min-width: 350px;
+    max-width: 600px;
+    padding-right: 2rem;
     object-fit: contain;
-    @media (max-width: 425px) {
-        max-width: 100vw;
-        padding-right: 2rem;
-    }
-    @media (min-width: 650px) and (max-width: 1250px) {
-        max-width: 80vw;
-    }
+    /*@media (max-width: 425px) {*/
+    /*    max-width: 120px;*/
+    /*    padding-right: 2rem;*/
+    /*}*/
+    /*@media (min-width: 650px) and (max-width: 1250px) {*/
+    /*    max-width: 80px;*/
+    /*}*/
 }
 
 .post-container{
@@ -134,14 +141,16 @@ footer {
     }
 
     img {
-        max-width: 150vw;
+        /* Setting default img width to 800px without media queries &
+         not dependent on view port width. */
+        max-width: 800px;
         object-fit: contain;
-        @media (min-width: 430px) and (max-width: 1252px) {
-            max-width: 100vw;
-        }
-        @media (min-width: 1252px) {
-            max-width: 50vw;
-        }
+        /*@media (min-width: 430px) and (max-width: 1252px) {*/
+        /*    max-width: 400px;*/
+        /*}*/
+        /*@media (min-width: 1252px) {*/
+        /*    max-width: 800px;*/
+        /*}*/
     }
 
     p {
