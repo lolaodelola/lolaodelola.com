@@ -14,7 +14,7 @@ pagination:
     {% for post in posts %}
         <li class="post-list-item">
             <h2 class="post-list-item-title">{{ post.data.title }}</h2>
-            <img src="{{ post.data.local.img }}" alt="{{ post.data.local.alt }}" class="post-list-img">
+            <img src="{{ post.data.local.img }}" alt="{{ post.data.local.alt }}" class="post-list-img" loading="lazy">
             <p class="description">{{ post.data.description }}</p>
             <p class="permalink"><a href="{{post.data.page.filePathStem}}">Continue Reading</a></p>
         </li>
